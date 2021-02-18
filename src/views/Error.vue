@@ -1,16 +1,16 @@
 <template>
-  <div class="home">
-    home首页
+  <div class="error">
+    404页面
   </div>
 </template>
 
 <script>
 export default {
-  name: "Home",
+  name: 'Error',
   data() {
     return {}
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

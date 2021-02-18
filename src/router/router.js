@@ -1,6 +1,7 @@
 import Home from "../views/Home.vue";
 
 const Login = () => import('../views/Login.vue');
+const Error = () => import('../views/Error.vue');
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: "/login",
     name: "Login",
     component: Login
+  },
+  {
+    path: '*',
+    name: 'Error',
+    component: Error
   }
 ];
 

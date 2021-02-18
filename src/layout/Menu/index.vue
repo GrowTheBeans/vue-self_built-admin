@@ -1,16 +1,16 @@
 <template>
-  <div class="home">
-    home首页
+  <div class="menu">
+    导航菜单
   </div>
 </template>
 
 <script>
 export default {
-  name: "Home",
+  name: 'Menu',
   data() {
     return {}
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

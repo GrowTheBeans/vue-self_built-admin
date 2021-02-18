@@ -1,16 +1,16 @@
 <template>
-  <div class="home">
-    home首页
+  <div class="header">
+    导航头部
   </div>
 </template>
 
 <script>
 export default {
-  name: "Home",
+  name: 'Header',
   data() {
     return {}
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
