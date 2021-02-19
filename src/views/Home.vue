@@ -1,12 +1,17 @@
 <template>
   <div class="home">
-    home首页
+    <layout />
   </div>
 </template>
 
 <script>
+import layout from '../layout/index.vue';
+
 export default {
   name: "Home",
+  components: {
+    layout
+  },
   data() {
     return {}
   }

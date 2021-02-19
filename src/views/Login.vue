@@ -1,8 +1,9 @@
 <template>
   <div class="login">
-    <h2>叩丁狼电商管理系统</h2>
+    <h3>叩丁狼电商管理系统</h3>
     <el-form
       :model="ruleForm"
+      label-position="left"
       label-width="40px"
       class="login__rule-form"
     >
@@ -30,7 +31,13 @@
         ></el-input>
       </el-form-item>
       <el-form-item class="login__form-btn">
-        <el-button type="primary" @click="submitForm('ruleForm')" size="small">提交</el-button>
+        <el-button
+          type="primary"
+          style="width: 100%"
+          @click="submitLogin('ruleForm')"
+          size="small"
+          >提交</el-button
+        >
       </el-form-item>
     </el-form>
   </div>
@@ -42,13 +49,13 @@ export default {
   data() {
     return {
       ruleForm: {
-        username: "",
-        userpass: "",
-      }
+        username: "admin",
+        userpass: "1",
+      },
     };
   },
   methods: {
-    submitForm(formName) {
+    submitLogin(formName) {
       console.log(formName);
     },
   },
@@ -57,34 +64,29 @@ export default {
 
 <style lang="scss" scoped>
 .login {
-  background-color: #324057;
+  background-color: #2d3a4b;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  h2 {
+  h3 {
     font-size: 28px;
     color: #fff;
   }
   .login__rule-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin-top: 40px;
     width: 420px;
     height: 320px;
+    margin-top: 40px;
+    padding: 0 20px;
+    box-sizing: content-box;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 4px rgb(124, 124, 124);
-    .login__form-btn {
-      width: 60%;
-      .el-button {
-        width: 100%;
-      }
-    }
   }
 }
 </style>

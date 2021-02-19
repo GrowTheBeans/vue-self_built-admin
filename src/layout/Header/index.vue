@@ -1,17 +1,21 @@
 <template>
-  <div class="header">
-    导航头部
-  </div>
+  <el-container>
+    <el-header>Header</el-header>
+  </el-container>
 </template>
 
 <script>
 export default {
-  name: 'Header',
+  name: "Header",
   data() {
-    return {}
-  }
-}
+    return {};
+  },
+};
 </script>
 
 <style lang="scss" scoped>
+.el-header {
+  background-color: #b3c0d1;
+  line-height: 60px;
+}
 </style>

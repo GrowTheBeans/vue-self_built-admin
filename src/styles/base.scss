@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+body {
+  background-color: $--bgcolor-grey;
+  background-image: linear-gradient(30deg, hsla(0, 0%, 100%, .15) 12%, transparent 12.5%, transparent 87%, hsla(0, 0%, 100%, .15) 87.5%, hsla(0, 0%, 100%, .15)), linear-gradient(150deg, hsla(0, 0%, 100%, .15) 12%, transparent 12.5%, transparent 87%, hsla(0, 0%, 100%, .15) 87.5%, hsla(0, 0%, 100%, .15)), linear-gradient(30deg, hsla(0, 0%, 100%, .15) 12%, transparent 12.5%, transparent 87%, hsla(0, 0%, 100%, .15) 87.5%, hsla(0, 0%, 100%, .15)), linear-gradient(150deg, hsla(0, 0%, 100%, .15) 12%, transparent 12.5%, transparent 87%, hsla(0, 0%, 100%, .15) 87.5%, hsla(0, 0%, 100%, .15)), linear-gradient(60deg, hsla(0, 0%, 100%, .25) 25%, transparent 25.5%, transparent 75%, hsla(0, 0%, 100%, .25) 0, hsla(0, 0%, 100%, .25)), linear-gradient(60deg, hsla(0, 0%, 100%, .25) 25%, transparent 25.5%, transparent 75%, hsla(0, 0%, 100%, .25) 0, hsla(0, 0%, 100%, .25));
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ' ';
+    clear: both;
+    height: 0;
+  }
+}
